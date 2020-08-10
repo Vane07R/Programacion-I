@@ -116,7 +116,7 @@ Partial Class Form1
         'optporcentaje
         '
         Me.optporcentaje.AutoSize = True
-        Me.optporcentaje.Location = New System.Drawing.Point(249, 139)
+        Me.optporcentaje.Location = New System.Drawing.Point(248, 139)
         Me.optporcentaje.Name = "optporcentaje"
         Me.optporcentaje.Size = New System.Drawing.Size(79, 17)
         Me.optporcentaje.TabIndex = 9
