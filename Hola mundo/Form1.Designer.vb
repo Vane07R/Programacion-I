@@ -25,7 +25,7 @@ Partial Class Form1
         Me.lblnum1 = New System.Windows.Forms.Label()
         Me.txtnum1 = New System.Windows.Forms.TextBox()
         Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btncalcular = New System.Windows.Forms.Button()
         Me.optsuma = New System.Windows.Forms.RadioButton()
         Me.optresta = New System.Windows.Forms.RadioButton()
         Me.optmultipli = New System.Windows.Forms.RadioButton()
@@ -60,14 +60,14 @@ Partial Class Form1
         Me.txtnum2.Size = New System.Drawing.Size(100, 20)
         Me.txtnum2.TabIndex = 3
         '
-        'Button1
+        'btncalcular
         '
-        Me.Button1.Location = New System.Drawing.Point(100, 139)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btncalcular.Location = New System.Drawing.Point(84, 116)
+        Me.btncalcular.Name = "btncalcular"
+        Me.btncalcular.Size = New System.Drawing.Size(103, 40)
+        Me.btncalcular.TabIndex = 4
+        Me.btncalcular.Text = "Calcular "
+        Me.btncalcular.UseVisualStyleBackColor = True
         '
         'optsuma
         '
@@ -177,13 +177,13 @@ Partial Class Form1
         Me.Controls.Add(Me.optmultipli)
         Me.Controls.Add(Me.optresta)
         Me.Controls.Add(Me.optsuma)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btncalcular)
         Me.Controls.Add(Me.txtnum2)
         Me.Controls.Add(Me.txtnum1)
         Me.Controls.Add(Me.lblnum2)
         Me.Controls.Add(Me.lblnum1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Calculadora Basica "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,7 +192,7 @@ Partial Class Form1
     Friend WithEvents lblnum1 As Label
     Friend WithEvents txtnum1 As TextBox
     Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btncalcular As Button
     Friend WithEvents optsuma As RadioButton
     Friend WithEvents optresta As RadioButton
     Friend WithEvents optmultipli As RadioButton
