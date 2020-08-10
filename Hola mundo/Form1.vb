@@ -1,32 +1,15 @@
-﻿Public Class Form1
-    Private Sub btncalcular_Click(sender As Object, e As EventArgs) Handles btncalcular.Click
-        Dim num1, num2, respuesta As Double
+﻿Public Class lblntabla
+    Private Sub btnProcesar_Click(sender As Object, e As EventArgs) Handles btnProcesar.Click
+        Dim ntabla, i As SByte
 
-        num1 = txtnum1.Text
-        num2 = txtnum2.Text
-
-        If optsuma.Checked Then
-            lblrespuesta.Text = num1 + num2
-        End If
-
-        If optresta.Checked Then
-            lblrespuesta.Text = num1 - num2
-        End If
-
-        If optmultipli.Checked Then
-            lblrespuesta.Text = num1 * num2
-        End If
-        If optdivi.Checked Then
-            lblrespuesta.Text = num1 / num2
-        End If
-        If optporcentaje.Checked Then
-            lblrespuesta.Text = num1 * num2 / 100
-        End If
-        If optexponente.Checked Then
-            lblrespuesta.Text = num1 ^ num2
-        End If
-        If optmodulo.Checked Then
-            lblrespuesta.Text = num1 Mod num2
+        ntabla = txtntabla.Text
+        lstTablas.Items.Clear()
+        If ntabla <= 12 Then
+            For i = 1 To 10
+                lstTablas.Items.Add(ntabla.ToString() + "X" + i.ToString() + "=" + (ntabla * i).ToString())
+            Next
+        Else
+            lstTablas.Items.Add("Por favor ingrese solo tablas iguales o menores a 12")
         End If
     End Sub
 End Class
